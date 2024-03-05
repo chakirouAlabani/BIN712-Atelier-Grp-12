@@ -7,7 +7,7 @@
 `Class`
 ```python
   {'Class 1' : 1, 'Class 2':2, 'Class 0':0, 'Class -1':-1, 'Class -2':-2}
-
+```
 - identify missing data
     - analyse and replace
       
