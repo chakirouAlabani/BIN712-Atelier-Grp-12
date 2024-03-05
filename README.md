@@ -50,6 +50,7 @@
   condition = data1['pmi']>upper_boundery
   condition.sum() # 14 values are outside the upper_boundary
   data1['pmi'][data1['pmi']>Q3] = upper_boundery
+```
 
 ## Choosing best attributes using entropy
 *once data cleaned, 10 best attributes identified were :*
