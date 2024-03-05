@@ -55,8 +55,7 @@
 *once data cleaned, 10 best attributes identified were :*
 
 
-```
-pyhon
+```python
      Feature
     0      ASA+
     1      ASA-
