@@ -54,6 +54,7 @@
 ## Choosing best attributes using entropy
 *once data cleaned, 10 best attributes identified were :*
 
+
 ```
     Feature
 0      ASA+
@@ -67,3 +68,5 @@
 8  std_dim1
 9  std_dim2
 ```
+
+
