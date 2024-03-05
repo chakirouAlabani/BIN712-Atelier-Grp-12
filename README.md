@@ -36,6 +36,20 @@
 
 *A histogramme of the Data distribution of each feature was done and one feature stood out as having the outlier be removed*
 
+- vsurf_R
+
+*The remaining Features were managed using the upper boundary as replacement value for all outliers outside this boundary*
+
+`For each feature:`
+```python
+  Q1 = data1['pmi'].quantile(0.25)
+  Q3 = data1['pmi'].quantile(0.75)
+  IQR = Q3 - Q1
+  upper_boundery = Q3 + 1.5*IQR
+  
+  condition = data1['pmi']>upper_boundery
+  condition.sum() # 14 values are outside the upper_boundary
+  data1['pmi'][data1['pmi']>Q3] = upper_boundery
 
 ## Choosing best attributes using entropy
 *once data cleaned, 10 best attributes identified were :*
@@ -53,19 +67,3 @@
 8  std_dim1
 9  std_dim2
 ```
-
-- vsurf_R
-
-*The remaining Features were managed using the upper boundary as replacement value for all outliers outside this boundary*
-
-`For each feature:`
-```python
-  Q1 = data1['pmi'].quantile(0.25)
-  Q3 = data1['pmi'].quantile(0.75)
-  IQR = Q3 - Q1
-  upper_boundery = Q3 + 1.5*IQR
-  
-  condition = data1['pmi']>upper_boundery
-  condition.sum() # 14 values are outside the upper_boundary
-  data1['pmi'][data1['pmi']>Q3] = upper_boundery
-
