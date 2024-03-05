@@ -35,6 +35,25 @@
 - vsurf_R (*1 value below lower_boundary*)
 
 *A histogramme of the Data distribution of each feature was done and one feature stood out as having the outlier be removed*
+
+
+## Choosing best attributes using entropy
+*once data cleaned, 10 best attributes identified were :*
+
+```
+    Feature
+0      ASA+
+1      ASA-
+2     CASA+
+3      DASA
+4    h_logP
+5    h_logS
+6      npr2
+7      rgyr
+8  std_dim1
+9  std_dim2
+```
+
 - vsurf_R
 
 *The remaining Features were managed using the upper boundary as replacement value for all outliers outside this boundary*
